@@ -1,0 +1,60 @@
+
+CST 8254 Practical Mid Term
+
+Your Name: Daniel Maroy
+
+1.
+scp danielmaroy.txt pi@192.168.50.245:~
+
+2. What command do you use to see a directory listing that includes the permissions of the files?
+ls -l
+
+3. What command did you use to save the output of the previous command to pr1.txt?
+ls -l > pr1.txt
+
+4. What are the permissions of the file you just created?
+ls -l pr1.txt
+
+5. What command do you use to display the folder you are currently working from?
+pwd
+
+6. What command did you use to change the permissions of the file so group members can only execute it?
+chmod 010 pr1.txt
+
+7. What command did you use to create the folder midtermExam-301?
+mkdir midtermExam-301
+
+8. What are the permissions of this new folder?
+ls -ld midtermExam-301
+
+9. What command do you use to list the ports your Raspberry Pi is listening to using the -at flag?
+netstat -at
+
+10. What command did you use to save the output to pr2.txt?
+netstat -at > pr2.txt
+
+11. What command did you use to start an sFTP session to your Raspberry Pi?
+sftp pi@<PI-IP-ADDRESS>
+
+12. What command did you use to copy midtermPi.txt using sFTP?
+put midtermPi.txt
+
+13. What does the command do?
+pwd>mt.txt saves the current directory path to mt.txt
+;tree -l>>pr.txt appends a recursive directory listing with permissions to pr.txt
+
+14. What command did you use to create a user named danielmaroy?
+sudo useradd danielmaroy
+
+15. What commands did you use to create the home directory and change its ownership?
+sudo mkdir /home/danielmaroy
+sudo chown danielmaroy:danielmaroy /home/danielmaroy
+
+16. What commands did you use to update packages and install FileZilla?
+sudo apt-get update
+sudo apt-get install filezilla -y
+
+17. Issue the command:
+cd /home
+ls -als > /home/pi/pr3.txt
+
